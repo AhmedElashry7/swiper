@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Swiper</title>
+  </head>
+  <body>
+
+        <div class="swiper-container">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item-slider">
+                        <div class="slider-image">
+                            <img src="image/imag01.JPG" alt="">
+                        </div>
+                        <div class="slider-content">
+                            <h1>Ashry</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam error ut pariatur enim doloribus obcaecati exercitationem minus quidem vel,</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item-slider">
+                        <div class="slider-image">
+                            <img src="image/imag02.jpg" alt="">
+                        </div>
+                        <div class="slider-content">
+                            <h1>Ashry</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam error ut pariatur enim doloribus obcaecati exercitationem minus quidem vel,</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item-slider">
+                        <div class="slider-image">
+                            <img src="image/imag03.jpg" alt="">
+                        </div>
+                        <div class="slider-content">
+                            <h1>Ashry</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam error ut pariatur enim doloribus obcaecati exercitationem minus quidem vel,</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item-slider">
+                        <div class="slider-image">
+                            <img src="image/imag04.jpg" alt="">
+                        </div>
+                        <div class="slider-content">
+                            <h1>Ashry</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam error ut pariatur enim doloribus obcaecati exercitationem minus quidem vel,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="slider-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        <script>
+            const swiper = new Swiper('.swiper',{
+               loop: true,
+               effect: 'fade',
+               pagination:{
+                el: '.swiper-pagination',
+                clickable: true,
+               } ,
+               navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+               }
+            });
+        </script>
+
+
+
+  </body>
+</html>
